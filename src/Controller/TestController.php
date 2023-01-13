@@ -15,4 +15,26 @@ class TestController extends AbstractController
             'controller_name' => 'TestController',
         ]);
     }
+     #[Route('/cv', name: 'cv')]
+    public function page(): Response
+    {
+        return $this->render('test/cv.html.twig', [
+            'controller_name' => 'TestController',
+        ]);
+    }
+
+    #[Route('/portfolio', name: 'portfolio')]
+    public function page1(): Response
+    {
+        return $this->render('test/portfolio.html.twig', [
+            'controller_name' => 'TestController',
+        ]);
+    }
+    #[Route('/loisir', name: 'loisir')]
+    public function page2(): Response
+    {
+        return $this->render('test/loisir.html.twig', [
+            'controller_name' => 'TestController',
+        ]);
+    }
 }
