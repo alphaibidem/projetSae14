@@ -12,6 +12,11 @@ body span {
     background-color: white;
     padding: 28px 0;
     margin: 0 5px;
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    animation: square-to-circle 10s infinite alternate;
 
 }
 
@@ -23,6 +28,8 @@ body span {
 img {
     margin-left: 60px;
     padding: 40px;
+
+
 }
 
 nav {
@@ -56,4 +63,33 @@ nav a:hover {
 
 }
 
-span {}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0 0 0 0;
+        background: coral;
+
+    }
+
+    25% {
+        border-radius: 10% 10% 10% 10%;
+        background: white;
+
+    }
+
+    50% {
+        border-radius: 25% 25% 25% 25%;
+        background: indianred;
+
+    }
+
+    75% {
+        border-radius: 40% 40% 40% 40%;
+        background: white;
+    }
+
+    100% {
+        border-radius: 50%;
+        background: darksalmon;
+    }
+}
