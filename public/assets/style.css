@@ -4,22 +4,30 @@
 }
 
 body {
-    background-image: url('image/1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(33, 31, 31);
+    color: white;
+}
+
+body span {
+    background-color: white;
+    padding: 28px 0;
+    margin: 0 5px;
+
 }
 
 .div-nav {
     float: left;
+
 }
 
 img {
     margin-left: 60px;
+    padding: 40px;
 }
 
 nav {
     float: right;
-    margin-top: -50px;
+    margin-top: -100px;
     margin-right: 100px;
 }
 
@@ -44,5 +52,8 @@ nav a:hover {
 .container {
     width: 800px;
     margin: 0 auto;
+    margin-top: 100px;
 
 }
+
+span {}
