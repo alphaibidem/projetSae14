@@ -1,3 +1,48 @@
+* {
+    box-sizing: border-box;
+
+}
+
 body {
-    background-color: yellow;
+    background-image: url('image/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-nav {
+    float: left;
+}
+
+img {
+    margin-left: 60px;
+}
+
+nav {
+    float: right;
+    margin-top: -50px;
+    margin-right: 100px;
+}
+
+nav a {
+    padding: 0 30px;
+    text-decoration: none;
+    color: rgb(172, 6, 114);
+    font-size: x-large;
+
+
+
+}
+
+nav a:hover {
+    color: rgb(172, 6, 114);
+    opacity: .5;
+    text-decoration: underline;
+}
+
+
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+
 }
