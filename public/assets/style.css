@@ -16,7 +16,7 @@ body span {
     width: 200px;
     height: 200px;
     background-color: rgb(33, 31, 31);
-    animation: square-to-circle 10s infinite alternate;
+    animation: square-to-circle 15s infinite alternate;
 
 }
 
