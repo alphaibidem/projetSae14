@@ -15,7 +15,7 @@ body span {
     margin-left: 50px;
     width: 200px;
     height: 200px;
-    background-color: coral;
+    background-color: rgb(33, 31, 31);
     animation: square-to-circle 10s infinite alternate;
 
 }
@@ -67,7 +67,7 @@ nav a:hover {
 @keyframes square-to-circle {
     0% {
         border-radius: 0 0 0 0;
-        background: coral;
+        background: rgb(33, 31, 31);
 
     }
 
@@ -79,7 +79,7 @@ nav a:hover {
 
     50% {
         border-radius: 25% 25% 25% 25%;
-        background: indianred;
+        background: rgb(33, 31, 31);
 
     }
 
@@ -90,6 +90,6 @@ nav a:hover {
 
     100% {
         border-radius: 50%;
-        background: darksalmon;
+        background: rgb(33, 31, 31);
     }
 }
