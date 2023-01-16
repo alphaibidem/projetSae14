@@ -15,8 +15,7 @@ body span {
     margin-left: 50px;
     width: 200px;
     height: 200px;
-    background-color: rgb(33, 31, 31);
-    animation: square-to-circle 15s infinite alternate;
+
 
 }
 
@@ -61,72 +60,4 @@ nav a:hover {
     margin: 0 auto;
     margin-top: 100px;
 
-}
-
-
-@keyframes square-to-circle {
-    0% {
-        border-radius: 0 0 0 0;
-        background: rgb(33, 31, 31);
-
-    }
-
-    25% {
-        border-radius: 10% 10% 10% 10%;
-        background: white;
-
-    }
-
-    50% {
-        border-radius: 25% 25% 25% 25%;
-        background: rgb(33, 31, 31);
-
-    }
-
-    75% {
-        border-radius: 40% 40% 40% 40%;
-        background: white;
-    }
-
-    100% {
-        border-radius: 50%;
-        background: rgb(33, 31, 31);
-    }
-}
-
-div.at-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.at-item {
-
-    font-weight: bold;
-    font-size: 3em;
-    color: rgb(172, 6, 114);
-    animation-name: focus-in-contract;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-
-
-}
-
-@keyframes focus-in-contract {
-
-    0% {
-        letter-spacing: 1em;
-        filter: blur(12px);
-        opacity: 0;
-    }
-
-    100% {
-        filter: blur(0);
-        opacity: 1;
-    }
 }

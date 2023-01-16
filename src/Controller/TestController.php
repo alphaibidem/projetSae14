@@ -37,4 +37,11 @@ class TestController extends AbstractController
             'controller_name' => 'TestController',
         ]);
     }
+    #[Route('/contact', name: 'contact')]
+    public function page3(): Response
+    {
+        return $this->render('test/contact.html.twig', [
+            'controller_name' => 'TestController',
+        ]);
+    }
 }
