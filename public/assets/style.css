@@ -1,3 +1,4 @@
+/* partie index */
 * {
     box-sizing: border-box;
 
@@ -6,6 +7,7 @@
 body {
     background-color: rgb(33, 31, 31);
     color: white;
+    background-image: url(/public/image/3.jpg);
 }
 
 body span {
@@ -53,11 +55,156 @@ nav a:hover {
     text-decoration: underline;
 }
 
+nav a:active {
+    font-weight: bold;
+}
+
 
 
 .container {
     width: 800px;
+    height: 200px;
     margin: 0 auto;
     margin-top: 100px;
+    box-shadow: 10px 10px white, -1em 0 .4em rgb(172, 6, 114);
 
+}
+
+.container a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(172, 6, 114);
+    margin-top: 150px;
+    font-size: x-large;
+    position: relative;
+
+}
+
+.container a:hover::before {
+    width: 100%;
+}
+
+.container a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    margin-left: 320px;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+    text-align: center;
+    z-index: -1;
+    transition: .2s all;
+
+}
+
+.container a:hover {
+    text-decoration: none;
+    color: rgb(172, 6, 114);
+
+}
+
+.box {
+
+    width: 300px;
+    height: 200px;
+    background-color: rgb(33, 31, 31);
+    margin: 0 auto;
+    margin-top: 70px;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin: 0 90px;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.box::before,
+.box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+    width: 100%;
+    height: 100%;
+    background-size: 600%;
+    z-index: -1;
+    transform: scale(1.01);
+    animation: animate 20s infinite;
+}
+
+.box::after {
+    filter: blur(20px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+footer {}
+
+@media only screen and (max-width: 800px) {}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(33, 31, 31);
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*partie formulaire */
+.body-form {
+    background-color: rgb(33, 31, 31);
+    color: rgb(172, 6, 114);
+    font-size: 18px;
+    font-size: x-large;
+
+}
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-field {
+    width: 30%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.submit-btn {
+    border-radius: 50px;
+}
+
+body a:hover {
+    text-decoration: underline;
+}
+
+label {
+    padding-left: 10px;
+    margin: 20px;
 }
