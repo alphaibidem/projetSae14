@@ -24,18 +24,21 @@ body span {
 .div-nav {
     float: left;
 
+
 }
 
 img {
     margin-left: 60px;
     padding: 40px;
+    margin-top: -50px;
+
 
 
 }
 
 nav {
     float: right;
-    margin-top: -100px;
+    margin-top: -120px;
     margin-right: 100px;
 }
 
@@ -230,4 +233,65 @@ body a:hover {
 label {
     padding-left: 10px;
     margin: 20px;
+}
+
+
+/*partie cv */
+.header-section {
+    background-color: rgb(33, 31, 31);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 40px -16px rgb(172, 6, 114);
+}
+
+
+.container-cv {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 40px -16px rgb(172, 6, 114);
+}
+
+.col {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
+
+}
+
+.section-img {
+    width: 30%;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.section-text {
+    float: left;
+}
+
+.section-text li {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .col {
+        flex: 1;
+        width: 100%;
+        margin: 5px;
+    }
+
+    .section-img {
+        width: 50%;
+        margin-bottom: 5px;
+    }
 }
