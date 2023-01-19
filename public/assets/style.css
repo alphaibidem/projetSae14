@@ -299,26 +299,50 @@ label {
 
 
 /*partie portfolio*/
-.section {
+.section-por {
     padding: 20px;
     box-shadow: 40px -16px rgb(172, 6, 114);
+
 }
 
 .sub-section {
     box-shadow: 3px 3px red, -1em 0 .4em olive;
     padding: 10px;
+
+    margin: 20px;
+    padding-left: 30px;
+
 }
+
+
+
+.sub-section img {
+    width: 15%;
+    margin-right: 20px;
+
+
+}
+
+.section-por img {
+    width: 15%;
+    margin-right: 20px;
+
+
+}
+
 
 .body-portfolio h1,
 h2,
 h3 {
     text-align: center;
+    color: rgb(172, 6, 114);
+
 }
 
 
 @media only screen and (max-width: 600px) {
 
-    .section,
+    .section-por,
     .sub-section {
         font-size: 16px;
         padding: 10px;
@@ -344,6 +368,7 @@ h3 {
 .section-loisir img {
     width: 30%;
     margin-right: 20px;
+
 }
 
 @media only screen and (max-width: 600px) {
