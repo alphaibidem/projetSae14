@@ -280,7 +280,7 @@ label {
 }
 
 @media (max-width: 600px) {
-    .container {
+    .container-cv {
         width: 100%;
     }
 
@@ -293,5 +293,68 @@ label {
     .section-img {
         width: 50%;
         margin-bottom: 5px;
+    }
+}
+
+
+
+/*partie portfolio*/
+.section {
+    padding: 20px;
+    box-shadow: 40px -16px rgb(172, 6, 114);
+}
+
+.sub-section {
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
+    padding: 10px;
+}
+
+.body-portfolio h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .section,
+    .sub-section {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+
+/* partie loisir */
+
+.section-loisir {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px #cccccc;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.section-loisir img {
+    width: 30%;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .section {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .section-loisir img {
+        width: 100%;
+        margin-right: 0;
     }
 }
