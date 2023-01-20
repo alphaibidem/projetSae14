@@ -69,7 +69,7 @@ nav a:active {
     height: 200px;
     margin: 0 auto;
     margin-top: 100px;
-    box-shadow: 10px 10px white, -1em 0 .4em rgb(172, 6, 114);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
 
 
@@ -80,7 +80,7 @@ nav a:active {
     text-decoration: none;
     text-align: center;
     color: rgb(172, 6, 114);
-    margin-top: 150px;
+    margin-top: 10px;
     font-size: x-large;
     position: relative;
 
@@ -110,6 +110,12 @@ nav a:active {
 
 }
 
+
+.box img {
+    width: 100%;
+    margin-left: -10px;
+}
+
 .box {
 
     width: 300px;
@@ -121,8 +127,10 @@ nav a:active {
     display: inline-block;
     justify-content: center;
     margin: 0 90px;
-    margin-top: 90px;
+    margin-top: 70px;
+    padding: 10px 10px;
     text-align: center;
+
 }
 
 .box::before,
@@ -131,13 +139,13 @@ nav a:active {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(190deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+    background: linear-gradient(170deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
     width: 100%;
     height: 100%;
     background-size: 600%;
     z-index: -1;
     transform: scale(1.01);
-    /*animation: animate 20s infinite;*/
+    /* animation: animate 10s infinite;*/
 }
 
 .box::after {
@@ -181,7 +189,54 @@ table {
     float: right;
 }
 
-@media only screen and (max-width: 800px) {}
+/* styles pour les écrans de taille inférieure à 600px */
+@media screen and (max-width: 1300px) {
+    body {
+        font-size: small;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .box img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .box img {
+        width: 50%;
+    }
+}
+
+/* styles pour les écrans de taille inférieure à 480px */
+@media screen and (max-width: 480px) {
+    nav a {
+        font-size: medium;
+    }
+
+    .container a {
+        font-size: medium;
+    }
+}
+
 
 .form-container {
     width: 80%;
@@ -193,46 +248,64 @@ table {
 
 
 /*partie formulaire */
-.body-form {
-    background-color: rgb(33, 31, 31);
-    color: rgb(172, 6, 114);
-    font-size: 18px;
-    font-size: x-large;
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    box-shadow: 40px -16px rgb(172, 6, 114);
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
+
 
 }
+
 
 .form-title {
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 .input-container {
-    margin-bottom: 20px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.input-container label {
+    width: 100%;
 }
 
 .input-field {
-    width: 30%;
-    height: 40px;
-    padding: 10px;
-    border-radius: 10px;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-radius: 5px;
     border: none;
-    text-align: center;
-    margin: 0 10px;
 }
 
 .submit-btn {
-    border-radius: 50px;
+    width: 100%;
+    background-color: olive;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
 }
 
-body a:hover {
-    text-decoration: underline;
+.submit-btn a {
+    text-decoration: none;
+    color: rgb(172, 6, 114);
+    opacity: 1;
+
 }
 
-label {
-    padding-left: 10px;
-    margin: 20px;
+.submit-btn a:hover {
+    opacity: .5;
+    color: rgb(172, 6, 114);
+
 }
 
 
@@ -333,7 +406,8 @@ label {
 
 .body-portfolio h1,
 h2,
-h3 {
+h3,
+h4 {
     text-align: center;
     color: rgb(172, 6, 114);
 
