@@ -114,6 +114,7 @@ nav a:active {
 .box img {
     width: 100%;
     margin-left: -10px;
+
 }
 
 .box {
@@ -130,6 +131,7 @@ nav a:active {
     margin-top: 70px;
     padding: 10px 10px;
     text-align: center;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
 }
 
@@ -145,7 +147,7 @@ nav a:active {
     background-size: 600%;
     z-index: -1;
     transform: scale(1.01);
-    /* animation: animate 20s infinite;*/
+    /*  animation: animate 20s infinite;*/
 }
 
 .box::after {
@@ -216,7 +218,7 @@ table {
     }
 
     .box img {
-        width: 50%;
+        width: 30%;
     }
 }
 
@@ -226,6 +228,14 @@ table {
     }
 }
 
+@media screen and (max-width: 1280px) {
+    .box img {
+        width: 20%;
+    }
+}
+
+
+
 /* styles pour les écrans de taille inférieure à 480px */
 @media screen and (max-width: 480px) {
     nav a {
@@ -234,6 +244,10 @@ table {
 
     .container a {
         font-size: medium;
+    }
+
+    .box img {
+        width: 70%;
     }
 }
 
