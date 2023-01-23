@@ -1,4 +1,4 @@
-document.querySelector('.submit-btn').addEventListener('click', function (event) {
+/*document.querySelector('.submit-btn').addEventListener('click', function (event) {
     event.preventDefault(); // empêche la soumission du formulaire
 
     let emptyFields = false;
@@ -16,4 +16,4 @@ document.querySelector('.submit-btn').addEventListener('click', function (event)
         // tous les champs sont remplis, on peut permettre le téléchargement
         document.querySelector('.submit-btn a').href = 'cv/CV-emploi.pdf';
     }
-});
+});*/

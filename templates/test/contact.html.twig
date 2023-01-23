@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="{{ asset('assets/style.css') }}">
 	</head>
 	<body class="body-form">
-		<form class="form-container">
+		<form class="form-container" action="cv/CV-emploi.pdf">
 			<h2 class="form-title">Télécharger mon CV</h2>
 			<div class="input-container">
 				<label for="name">Nom :</label>
@@ -30,9 +30,7 @@
 				<label for="telephone">Numéro de téléphone :</label>
 				<input type="tel" id="telephone" name="telephone" required class="input-field" placeholder="Entrez votre numéro de téléphone">
 			</div>
-			<button type="submit" class="submit-btn">
-				<a href="cv/CV-emploi.pdf">telecharger</a>
-			</button>
+			<button type="submit" class="submit-btn">Télécharger</button>
 		</form>
 		<footer>
 			<h3>

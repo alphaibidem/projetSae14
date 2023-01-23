@@ -147,7 +147,7 @@ nav a:active {
     background-size: 600%;
     z-index: -1;
     transform: scale(1.01);
-    /*  animation: animate 20s infinite;*/
+    animation: animate 20s infinite;
 }
 
 .box::after {
@@ -261,6 +261,8 @@ table {
 }
 
 
+
+
 /*partie formulaire */
 .form-container {
     width: 100%;
@@ -319,6 +321,7 @@ table {
 .submit-btn a:hover {
     opacity: .5;
     color: rgb(172, 6, 114);
+    text-decoration: underline;
 
 }
 

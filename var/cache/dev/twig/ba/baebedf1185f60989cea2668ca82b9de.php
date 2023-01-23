@@ -53,7 +53,7 @@ class __TwigTemplate_6698aafc00b6efc43037cac8bd91f59c extends Template
         echo "\">
 \t</head>
 \t<body class=\"body-form\">
-\t\t<form class=\"form-container\">
+\t\t<form class=\"form-container\" action=\"cv/CV-emploi.pdf\">
 \t\t\t<h2 class=\"form-title\">Télécharger mon CV</h2>
 \t\t\t<div class=\"input-container\">
 \t\t\t\t<label for=\"name\">Nom :</label>
@@ -75,9 +75,7 @@ class __TwigTemplate_6698aafc00b6efc43037cac8bd91f59c extends Template
 \t\t\t\t<label for=\"telephone\">Numéro de téléphone :</label>
 \t\t\t\t<input type=\"tel\" id=\"telephone\" name=\"telephone\" required class=\"input-field\" placeholder=\"Entrez votre numéro de téléphone\">
 \t\t\t</div>
-\t\t\t<button type=\"submit\" class=\"submit-btn\">
-\t\t\t\t<a href=\"cv/CV-emploi.pdf\">telecharger</a>
-\t\t\t</button>
+\t\t\t<button type=\"submit\" class=\"submit-btn\">Télécharger</button>
 \t\t</form>
 \t\t<footer>
 \t\t\t<h3>
@@ -102,7 +100,7 @@ class __TwigTemplate_6698aafc00b6efc43037cac8bd91f59c extends Template
 
 \t\t</footer>
 \t\t<script src=\"";
-        // line 59
+        // line 57
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/app.js"), "html", null, true);
         echo "\"></script>
 \t</body>
@@ -128,7 +126,7 @@ class __TwigTemplate_6698aafc00b6efc43037cac8bd91f59c extends Template
 
     public function getDebugInfo()
     {
-        return array (  106 => 59,  52 => 8,  43 => 1,);
+        return array (  104 => 57,  52 => 8,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -143,7 +141,7 @@ class __TwigTemplate_6698aafc00b6efc43037cac8bd91f59c extends Template
 \t\t<link rel=\"stylesheet\" href=\"{{ asset('assets/style.css') }}\">
 \t</head>
 \t<body class=\"body-form\">
-\t\t<form class=\"form-container\">
+\t\t<form class=\"form-container\" action=\"cv/CV-emploi.pdf\">
 \t\t\t<h2 class=\"form-title\">Télécharger mon CV</h2>
 \t\t\t<div class=\"input-container\">
 \t\t\t\t<label for=\"name\">Nom :</label>
@@ -165,9 +163,7 @@ class __TwigTemplate_6698aafc00b6efc43037cac8bd91f59c extends Template
 \t\t\t\t<label for=\"telephone\">Numéro de téléphone :</label>
 \t\t\t\t<input type=\"tel\" id=\"telephone\" name=\"telephone\" required class=\"input-field\" placeholder=\"Entrez votre numéro de téléphone\">
 \t\t\t</div>
-\t\t\t<button type=\"submit\" class=\"submit-btn\">
-\t\t\t\t<a href=\"cv/CV-emploi.pdf\">telecharger</a>
-\t\t\t</button>
+\t\t\t<button type=\"submit\" class=\"submit-btn\">Télécharger</button>
 \t\t</form>
 \t\t<footer>
 \t\t\t<h3>
